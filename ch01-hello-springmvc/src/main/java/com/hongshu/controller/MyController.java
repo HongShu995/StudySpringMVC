@@ -57,8 +57,21 @@ public class MyController
 
         //当配置了视图解析器后，可以使用逻辑名称（文件名），指定视图
         //框架会使用视图解析器的前缀 + 逻辑名称 + 后缀 组成完成路径， 这里就是字符连接操作
-        ///WEB-INF/view/ + show + .jsp
-        mv.setViewName("/show.jsp");
+        //  /WEB-INF/view/+show+.jsp
+        mv.setViewName("show");
+
+        return mv;
+
+    }
+
+    @GetMapping("/other.do")
+    public ModelAndView doOther()    // doGet()--service请求处理
+    {
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("msg","=欢迎使用springmvc做web开发");
+        mv.addObject("fun","=执行的是doOther方法");
+        mv.setViewName("other");
+
         return mv;
 
     }
