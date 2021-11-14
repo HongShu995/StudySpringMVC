@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @RequestMapping:
+ * @RequestMapping-:
  *    value ： 所有请求地址的公共部分，叫做模块名称
  *    位置： 放在类的上面
  */
