@@ -12,13 +12,15 @@
                 $.ajax({
                     //url:"returnVoid-ajax.do",
                     //url:"returnStudentJson.do",
-                    url:"returnStudentJsonArray.do",
+                    //url:"returnStudentJsonArray.do",
+                    url:"returnStringData.do",
                     data:{
                         name:"zhangsan",
                         age:20
                     },
                     type:"post",
-                    dataType:"json",
+                    //dataType:"json",
+                    dataType:"text",
                 success:function (resp)
                 {
                     //resp从服务器端返回的是json格式的字符串 {"name":"zhangsan","age":20}
@@ -27,9 +29,10 @@
                     // [{"name":"李四同学","age":20},{"name":"张三","age":28}]
                     //alert(resp.name + "    "+resp.age);
 
-                    $.each(resp,function(i,n){
-                        alert(n.name+"   "+n.age)
-                    })
+                    // $.each(resp,function(i,n){
+                    //     alert(n.name+"   "+n.age)
+                    // })
+                    alert("返回的是文本数据: "+resp)
                 }
                 })
             })
