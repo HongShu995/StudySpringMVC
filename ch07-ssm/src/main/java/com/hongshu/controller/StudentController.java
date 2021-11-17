@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import org.w3c.dom.stylesheets.LinkStyle;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -43,7 +42,6 @@ public class StudentController
     public List<Student> queryStudent()
     {
         //参数检查，简单的数据处理
-        List<Student> students = studentService.findStudents();
-        return students;
+        return studentService.findStudents();
     }
 }
