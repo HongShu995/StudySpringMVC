@@ -1,6 +1,7 @@
 package com.hongshu.controller;
 
 import com.hongshu.exception.AgeException;
+import com.hongshu.exception.MyUserException;
 import com.hongshu.exception.NameException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class MyController
 {
     @RequestMapping("/some.do")
-    public ModelAndView doSome(String name,Integer age)
+    public ModelAndView doSome(String name,Integer age) throws MyUserException
     {
         //处理some.do请求了。 相当于service调用处理完成了。
         ModelAndView mv = new ModelAndView();

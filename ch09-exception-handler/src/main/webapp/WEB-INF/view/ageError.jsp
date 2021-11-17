@@ -4,8 +4,8 @@
     <title>Title</title>
 </head>
 <body>
-    <h3>/WEB-INF/view/other.jsp</h3><br/>
-    <h3>msg数据：${msg}</h3><br/>
-    <h3>fun数据：${fun}</h3>
+    ageError.jsp <br/>
+    提示信息：${msg} <br/>
+    异常信息：${ex.message} <br/>
 </body>
 </html>

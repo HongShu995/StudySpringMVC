@@ -4,8 +4,8 @@
     <title>Title</title>
 </head>
 <body>
-    <h3>/WEB-INF/view/show.jsp</h3><br/>
-    <h3>myname数据：${myname}</h3><br/>
-    <h3>myage数据：${myage}</h3>
+    defaultError.jsp <br/>
+    提示信息：${msg} <br/>
+    异常信息：${ex.message} <br/>
 </body>
 </html>
